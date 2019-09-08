@@ -29,6 +29,12 @@ function blob_fixup() {
     lib64/lib-imscamera.so)
         "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
         ;;
+    lib/lib-imsvideocodec.so)
+        "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
+        ;;
+    lib64/lib-imsvideocodec.so)
+        "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
+        ;;
     lib64/lib-imsvt.so)
         "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
         ;;
