@@ -285,7 +285,6 @@ vendor/lib/egl/libGLESv1_CM_adreno.so
 vendor/lib/egl/libGLESv2_adreno.so
 vendor/lib/egl/libQTapGLES.so
 vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/hw/vulkan.msm8996.so:vendor/lib/vulkan.msm8996.so
 vendor/lib/libC2D2.so
 vendor/lib/libCB.so
 vendor/lib/libOpenCL.so
@@ -318,7 +317,6 @@ vendor/lib64/egl/libGLESv1_CM_adreno.so
 vendor/lib64/egl/libGLESv2_adreno.so
 vendor/lib64/egl/libQTapGLES.so
 vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/hw/vulkan.msm8996.so:vendor/lib64/vulkan.msm8996.so
 vendor/lib64/libC2D2.so
 vendor/lib64/libCB.so
 vendor/lib64/libOpenCL.so
@@ -634,6 +632,10 @@ priv-app/VZWAPNService/VZWAPNService.apk;PRESIGNED
 priv-app/VZWAVS/VZWAVS.apk;PRESIGNED
 priv-app/VzwLcSilent/VzwLcSilent.apk;PRESIGNED
 priv-app/VzwOmaTrigger/VzwOmaTrigger.apk;PRESIGNED
+
+# Vulkan
+lib/vulkan.msm8996.so
+lib64/vulkan.msm8996.so
 
 # Widevine (DRM) - from daisy - daisy_sprout:10/QKQ1.191002.002/V11.0.7.0.QDLMIXM
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|e130b8f1c8d46d8a185b00cba5ff8a2a871ee94c
