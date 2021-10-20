@@ -23,6 +23,15 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+    lib/lib-imscamera.so)
+        "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
+        ;;
+    lib64/lib-imscamera.so)
+        "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
+        ;;
+    lib64/lib-imsvt.so)
+        "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
+        ;;
     vendor/lib/hw/camera.msm8996.so)
         sed -i "s/service.bootanim.exit/service.bootanim.zzzz/g" "${2}"
         ;;
