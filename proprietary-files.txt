@@ -107,7 +107,7 @@ etc/permissions/cneapiclient.xml|15831adf0e80243042b90c734eea0a68eb8ae9c9
 etc/permissions/com.quicinc.cne.xml|e99e631d8b06ba4680529e9e4004d8d05baf6904
 framework/cneapiclient.jar|af7db889362e562a4c5073bb6aae32947218abf0
 framework/com.quicinc.cne.jar|caad1cfa7aa3a36e8d6b1e6ab232c243bdea7ab8
--priv-app/CNEService/CNEService.apk|a59621ae53f36754c5af7429176e15423be5d588
+priv-app/CNEService/CNEService.apk|a59621ae53f36754c5af7429176e15423be5d588
 vendor/bin/cnd|82f0014d2724cb23fd661447966a1a896aae4c4a
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml|578f3f8f56059bfdbef926bcc68d01c15e06951f
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml|1fb42c672a12b6660bdce3ea94e0c43719dd9de8
@@ -486,13 +486,13 @@ vendor/lib64/libquipc_os_api.so
 vendor/lib64/libsmemlog.so
 
 # Radio
--app/QtiTelephonyService/QtiTelephonyService.apk
+app/QtiTelephonyService/QtiTelephonyService.apk
 etc/permissions/qcrilhook.xml
 etc/permissions/telephonyservice.xml
--framework/QtiTelephonyServicelibrary.jar
--framework/qcrilhook.jar
--framework/qti-telephony-common.jar
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+framework/QtiTelephonyServicelibrary.jar
+framework/qcrilhook.jar
+framework/qti-telephony-common.jar
+priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/netmgrd
 vendor/bin/qti
 vendor/bin/rmt_storage
@@ -618,8 +618,8 @@ vendor/lib64/libsensor_user_cal.so
 vendor/lib64/sensors.ssc.so
 
 # Sprint
--priv-app/SprintDM/SprintDM.apk
--priv-app/SprintHM/SprintHM.apk
+priv-app/SprintDM/SprintDM.apk
+priv-app/SprintHM/SprintHM.apk
 
 # Thermal
 vendor/bin/thermal-engine
@@ -632,18 +632,18 @@ vendor/lib/libtime_genoff.so|24f6064818bc53c5ea17a3608766e3cc1e889f64
 vendor/lib64/libtime_genoff.so|e2cef32a79f754b5a17012137cf39f53cd6e3f69
 
 # Verizon
--app/VZWAPNLib/VZWAPNLib.apk;PRESIGNED
--app/vzw_msdc_api/vzw_msdc_api.apk;PRESIGNED
+app/VZWAPNLib/VZWAPNLib.apk;PRESIGNED
+app/vzw_msdc_api/vzw_msdc_api.apk;PRESIGNED
 etc/permissions/com.verizon.apn.xml
 etc/permissions/com.verizon.embms.xml
 etc/permissions/com.verizon.provider.xml
 etc/permissions/qti-vzw-ims-internal.xml
 etc/permissions/vzw_sso_permissions.xml
--framework/VerizonUnifiedSettings.jar;PRESIGNED
--priv-app/VZWAPNService/VZWAPNService.apk;PRESIGNED
--priv-app/VZWAVS/VZWAVS.apk;PRESIGNED
--priv-app/VzwLcSilent/VzwLcSilent.apk;PRESIGNED
--priv-app/VzwOmaTrigger/VzwOmaTrigger.apk;PRESIGNED
+framework/VerizonUnifiedSettings.jar;PRESIGNED
+priv-app/VZWAPNService/VZWAPNService.apk;PRESIGNED
+priv-app/VZWAVS/VZWAVS.apk;PRESIGNED
+priv-app/VzwLcSilent/VzwLcSilent.apk;PRESIGNED
+priv-app/VzwOmaTrigger/VzwOmaTrigger.apk;PRESIGNED
 
 # Widevine (DRM) - from daisy - daisy_sprout:10/QKQ1.191002.002/V11.0.7.0.QDLMIXM
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|e130b8f1c8d46d8a185b00cba5ff8a2a871ee94c
