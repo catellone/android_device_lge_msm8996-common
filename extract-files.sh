@@ -24,19 +24,19 @@ fi
 function blob_fixup() {
     case "${1}" in
     lib/lib-imscamera.so)
-        "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
+        grep -q "libgui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
         ;;
     lib64/lib-imscamera.so)
-        "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
+        grep -q "libgui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
         ;;
     lib/lib-imsvideocodec.so)
-        "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
+        grep -q "libui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
         ;;
     lib64/lib-imsvideocodec.so)
-        "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
+        grep -q "libui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
         ;;
     lib64/lib-imsvt.so)
-        "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
+        grep -q "libui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
         ;;
     vendor/lib/hw/camera.msm8996.so)
         sed -i "s/service.bootanim.exit/service.bootanim.zzzz/g" "${2}"
