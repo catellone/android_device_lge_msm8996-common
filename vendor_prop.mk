@@ -73,12 +73,14 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Data modules
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.use_data_netmgrd=true \
     persist.data.df.dev_name=rmnet_usb0 \
     persist.data.df.iwlan_mux=9 \
     persist.data.iwlan.enable=true \
     persist.data.mode=concurrent \
     persist.data.netmgrd.qos.enable=true
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.use_data_netmgrd=true
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
