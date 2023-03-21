@@ -19,7 +19,7 @@
 $(call inherit-product, vendor/lge/msm8996-common/msm8996-common-vendor.mk)
 
 # Inherit from common lge product
-$(call inherit-product, device/lge/common/common.mk)
+$(call inherit-product-if-exists, device/lge/common/common.mk)
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
