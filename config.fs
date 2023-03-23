@@ -73,6 +73,12 @@ user:  AID_GPS
 group: AID_GPS
 caps: SETUID SETGID
 
+[vendor/bin/loc_launcher]
+mode: 0755
+user:  AID_GPS
+group: AID_GPS
+caps: SETUID SETGID
+
 [vendor/bin/xtwifi-client]
 mode: 0755
 user:  AID_GPS

@@ -198,11 +198,13 @@ PRODUCT_GMS_CLIENTID_BASE := android-om-lg
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.0-impl-qti:64 \
+    android.hardware.gnss@2.0-impl-qti \
     android.hardware.gnss@2.0-service-qti \
     libbatching \
     libgeofencing \
-    libgnss
+    libgnss \
+    libgnsspps \
+    libsensorndkbridge
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
@@ -255,7 +257,7 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-service \
     android.hardware.keymaster@3.0.vendor
 
-# LiveDisplay 
+# LiveDisplay
 # TEMP: Kill as it causes stack corruption.
 # " Abort message: 'stack corruption detected (-fstack-protector)' "
 #PRODUCT_PACKAGES += \
